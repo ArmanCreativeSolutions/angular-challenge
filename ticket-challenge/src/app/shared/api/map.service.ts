@@ -89,10 +89,160 @@ export class MapService {
                 reserved: false,
                 disabled: false
               },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
             ]
           },
           {
             seats: [
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
+              {
+                taken: false,
+                reserved: false,
+                disabled: false
+              },
               {
                 taken: false,
                 reserved: false,

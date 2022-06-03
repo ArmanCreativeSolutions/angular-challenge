@@ -1,5 +1,10 @@
-<div>
-    <section>
-        <a *ngFor="let salon of salons" [routerLink]="['', 'salons', salon.id]">{{salon.title}}</a>
+<div class="salon-list">
+    <section class="salon-list__container">
+        <a
+            *ngFor="let salon of salons"
+            class="salon-list__link"
+            [routerLink]="['', 'salons', salon.id]"
+            >{{ salon.title }}</a
+        >
     </section>
 </div>
