@@ -14,27 +14,27 @@ export class MapService {
       observer.next([
         {
           id: 1,
-          title: 'aaa'
+          title: '1'
         },
         {
           id: 2,
-          title: 'bbb'
+          title: '2'
         },
         {
           id: 3,
-          title: 'ccc'
+          title: '3'
         },
         {
           id: 4,
-          title: 'ddd'
+          title: '4'
         },
         {
           id: 5,
-          title: 'eee'
+          title: '5'
         },
         {
           id: 6,
-          title: 'fff'
+          title: '6'
         },
       ])
     })
