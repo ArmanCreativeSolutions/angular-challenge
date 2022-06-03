@@ -6,7 +6,6 @@ import {PlanComponent} from "./plan/plan.component";
 import {MapService} from "../shared/api/map.service";
 import {PlanResolver} from "./plan/plan.resolver";
 
-
 @NgModule({
   declarations: [
     SalonsListComponent,

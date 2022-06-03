@@ -6,6 +6,10 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class MapService {
+  
+/**
+ * Because the API link is broken, we created fake data here in the form of observable
+ **/
 
   constructor(private http: HttpClient) { }
 
@@ -688,6 +692,10 @@ export class MapService {
   }
 }
 
+
+/**
+ * We write all the relevant models here, I created the models we wanted as a class, so that another class could be included.
+ **/
 export class MapResponseModel {
   public id: number = 0;
   public title: string = '';

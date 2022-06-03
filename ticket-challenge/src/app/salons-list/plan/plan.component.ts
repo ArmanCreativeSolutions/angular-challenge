@@ -14,10 +14,12 @@ export class PlanComponent implements OnInit {
   constructor(private route: ActivatedRoute) {
   }
 
+  // The data is sent to the component via resolver
   ngOnInit(): void {
     this.plan = this.route.snapshot.data['data'] as MapItemResponseModel;
   }
 
+  // When the seat is clicked, it checks several conditions and if the conditions are met, the seat is selected
   public checkSeat(seatEl: HTMLElement, rowIndex: number, seatIndex: number) {
     const seatObj = this.plan.rows[rowIndex].seats[seatIndex];
     if (seatObj.disabled) {
@@ -42,6 +44,7 @@ export class PlanComponent implements OnInit {
     this.plan.rows[rowIndex].seats[seatIndex].isReservingByUser = true;
   }
 
+  // Click on the random selection button, select the empty seat
   selectRandom() {
     let allSeats: any = [];
     this.plan.rows.forEach((row, rowIndex) => {

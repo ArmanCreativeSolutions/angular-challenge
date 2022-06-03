@@ -1,3 +1,7 @@
+/**
+ * In this file, a resolver is created which enters the seat selection page if the data is returned
+ **/
+
 import {Injectable} from '@angular/core';
 import {
   Resolve,
