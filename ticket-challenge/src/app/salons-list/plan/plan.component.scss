@@ -1,3 +1,24 @@
+.svg-icon {
+    line-height: 1;
+    color: #a1a5b7;
+}
+
+.svg-icon.svg-icon-2x svg {
+    height: 1.1rem !important;
+    width: 1.1rem !important;
+}
+
+.svg-icon-disabled {
+    color: #555555;
+}
+.svg-icon-reserved,
+.svg-icon-selected {
+    color: #7239ea;
+}
+.svg-icon-taken {
+    color: #50cd89;
+}
+
 main {
     height: 100vh;
     display: flex;
@@ -72,13 +93,13 @@ button {
         padding: 0 0 -4px -4px;
         position: relative;
 
-        span {
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: -40px;
-            transform: translateY(-50%);
-        }
+        // span {
+        //     color: white;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: -40px;
+        //     transform: translateY(-50%);
+        // }
 
         .seat {
             width: 24px;
@@ -86,34 +107,33 @@ button {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid #ccc;
-            margin: 0 0 4px 4px;
-            background: #aaa;
+            cursor: pointer;
+            // border: 1px solid #ccc;
+            // margin: 0 0 4px 4px;
+            // background: #aaa;
 
-            img {
-                width: 20px;
-                height: 20px;
-            }
+            // img {
+            //     width: 20px;
+            //     height: 20px;
+            // }
 
             &.disabled-seat {
                 cursor: not-allowed;
-                background: rgba(180, 180, 180, 1);
-
-                img {
-                    opacity: 0.5;
-                }
+               svg {
+                @extend .svg-icon-disabled;
+               }
             }
 
-            &.reserved-seat {
-                background: rgba(255, 255, 180, 1);
+            &.reserved-seat svg{
+                @extend .svg-icon-taken;
             }
 
-            &.taken-seat {
-                background: rgba(80, 80, 80, 1);
+            &.taken-seat svg{
+                @extend .svg-icon-taken;
             }
 
-            &.selected-seat {
-                background: rgba(120, 255, 120, 1);
+            &.selected-seat svg{
+              @extend .svg-icon-selected;
             }
         }
     }
