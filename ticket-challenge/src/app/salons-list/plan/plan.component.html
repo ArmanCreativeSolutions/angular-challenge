@@ -1,0 +1,15 @@
+<div class="page">
+  <button (click)="selectRandom()">select random</button>
+  <div class="salon">
+    <div class="row" *ngFor="let row of plan.rows; let rowIndex = index">
+      <span>{{rowIndex + 1}}</span>
+      <div #seatEl class="seat" id="seat-{{rowIndex}}-{{seatIndex}}" *ngFor="let seat of row.seats; let seatIndex = index"
+           [class.disabled-seat]="seat.disabled"
+           [class.taken-seat]="seat.taken"
+           [class.reserved-seat]="seat.reserved"
+           (click)="checkSeat(seatEl, rowIndex, seatIndex)">
+        <img src="assets/icon/seat-2.svg" alt=""/>
+      </div>
+    </div>
+  </div>
+</div>

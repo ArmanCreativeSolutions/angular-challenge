@@ -1,0 +1,71 @@
+.page {
+  background: rgb(0, 0, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.salon {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/icon/screen.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 48px;
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 -4px -4px;
+    position: relative;
+
+    span {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+    }
+
+    .seat {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc;
+      margin: 0 0 4px 4px;
+      background: #aaa;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      &.disabled-seat {
+        cursor: not-allowed;
+        background: rgba(180, 180, 180, 1);
+
+        img {
+          opacity: .5;
+        }
+      }
+
+      &.reserved-seat {
+        background: rgba(255, 255, 180, 1);
+      }
+
+      &.taken-seat {
+        background: rgba(80, 80, 80, 1);
+      }
+
+      &.selected-seat {
+        background: rgba(120, 255, 120, 1);
+      }
+    }
+  }
+}
