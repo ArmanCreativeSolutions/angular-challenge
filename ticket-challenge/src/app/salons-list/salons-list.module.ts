@@ -5,7 +5,6 @@ import {SalonsListComponent} from "./salons-list.component";
 import {PlanComponent} from "./plan/plan.component";
 import {MapService} from "../shared/api/map.service";
 import {PlanResolver} from "./plan/plan.resolver";
-import {ActivatedRouteSnapshot} from "@angular/router";
 
 
 @NgModule({
