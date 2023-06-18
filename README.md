@@ -16,10 +16,11 @@ randomly to user and user can select a seat. The basic application implemented a
 4. You should change the color of selected seats after user click. Also, you should log the coordinates of the selected seat.
 
 
-# APIs
-Base URL: https://ticket-challange.herokuapp.com
+# API Standard
 
 * `GET /map`
+
+‍‍‍response body sample: ['m213', 'm654', 'm63', 'm6888']
 
 
 Get the list of map ids.
@@ -27,10 +28,35 @@ You should use this endpoint to get the list and choose one of the stadium maps 
 
 * `GET /map/<map_id>`
 
-
 Get map detail and show seats
 
+
+response body sample:
+[
+   [0 0 1 0]
+   [0 1 0 0]
+   [1 1 1 1]
+   [1 1 1 1]
+]
+
+
 in the response: 1 means reserved, and 0 means seat available to buy
+
+
+* `POST /map/<map_id>/ticket`
+
+
+request body sample:
+{
+x: 2,
+y: 1
+}
+
+Buy tickets
+`x` and `y` are Seat coordinates in the request
+
+
+Suppose the backend APIs are concurrently in the development process. So mock APIs in some way clean to continue your work.
 
 # Implementation details
 
