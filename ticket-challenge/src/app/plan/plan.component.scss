@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  width: 100%;
+  /* constrain demo height but keep responsive; you can tweak as needed */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Wrapper keeps aspect ratio square so the canvas will be square and responsive */
+.canvas-wrap {
+  position: relative;
+  width: 100%;
+  /* Keep 1:1 aspect ratio using padding-top trick */
+  padding-top: 100%;
+  background: #f6f8fa; /* subtle background */
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.grid-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: manipulation;
+  display: block;
+  -webkit-user-select: none;
+  user-select: none;
+}
